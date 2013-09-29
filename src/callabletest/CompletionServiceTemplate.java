@@ -15,6 +15,12 @@ import java.util.concurrent.TimeUnit;
 
 import utils.HttpUtil;
 
+/***
+ * 多线程回调模板示例
+ * 
+ * @author dlu
+ * 
+ */
 public abstract class CompletionServiceTemplate {
 	private int timeout = 10;
 

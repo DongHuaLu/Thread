@@ -4,6 +4,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 三种线程池
+ * 
+ * @author dlu
+ * 
+ */
 public class ThreadPoolText {
 
 	public static void main(String[] args) {

@@ -4,10 +4,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
+/***
+ * Semaphore(n),Semaphore.acquire(),当线程小于n时允许进入,执行完释放Semaphore.release();
+ * 
+ * @author dlu 计数信号量
+ * 
+ */
 public class SemaphoreTest {
 	public static void main(String[] args) {
 		ExecutorService threadPool = Executors.newCachedThreadPool();
-		final Semaphore sp = new Semaphore(3,true);
+		final Semaphore sp = new Semaphore(3);
 		for (int i = 0; i < 10; i++) {
 			Runnable r = new Runnable() {
 				@Override

@@ -1,5 +1,11 @@
 package Thread;
 
+/**
+ * volatile修饰变量,来保证可见性,不保证原子性 defaultCount 不保证原子性和可见性,syncCount即保证原子性和可见性,线程安全
+ * 
+ * @author dlu
+ * 
+ */
 public class Volatile {
 
 	private volatile static int volatileCount = 0;

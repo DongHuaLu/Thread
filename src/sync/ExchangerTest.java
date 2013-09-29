@@ -4,6 +4,12 @@ import java.util.concurrent.Exchanger;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/***
+ * Exchanger,exchanger.exchange(data),第一个线程在此点等待第二个线程,当两个线程同时到达此点是,交换数据后继续执行
+ * 
+ * @author dlu 交换对象的同步点
+ * 
+ */
 public class ExchangerTest {
 
 	public static void main(String[] args) {

@@ -1,5 +1,11 @@
 package Thread;
 
+/**
+ * wait(),notify()来完成生产者/消费者.
+ * 
+ * @author dlu
+ * 
+ */
 public class ThreadCommunication {
 
 	public static void main(String[] args) {

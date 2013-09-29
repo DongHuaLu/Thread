@@ -8,6 +8,12 @@ import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/***
+ * CompletionService,接受多线程处理结果,按照完成时间接收;
+ * 
+ * @author dlu
+ * 
+ */
 public class CompletionServiceTest {
 
 	public static void main(String[] args) {

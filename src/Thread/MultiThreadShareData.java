@@ -1,5 +1,11 @@
 package Thread;
 
+/***
+ * 通过synchronized锁住共享类变量来防止线程安全问题
+ * 
+ * @author dlu
+ * 
+ */
 public class MultiThreadShareData {
 	private static int j = 2;
 

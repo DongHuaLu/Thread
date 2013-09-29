@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
+/***
+ * 自己用Map<Thread,Object> 来实现ThreadLocal效果
+ * 
+ * @author dlu
+ * 
+ */
 public class ThreadScopShareData {
 	private static int data = 0;
 	private static Map<Thread, Integer> map = new HashMap<Thread, Integer>();

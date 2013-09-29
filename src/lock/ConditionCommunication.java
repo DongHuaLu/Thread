@@ -4,6 +4,12 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/***
+ * 采用Condition来完成生产者/消费者模式
+ * 
+ * @author dlu
+ * 
+ */
 public class ConditionCommunication {
 
 	public static void main(String[] args) {

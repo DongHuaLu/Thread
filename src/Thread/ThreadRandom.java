@@ -13,23 +13,27 @@ public class ThreadRandom {
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				data = new Random().nextInt();
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
+				synchronized (ThreadRandom.class) {
+					data = new Random().nextInt();
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+					System.out.println(Thread.currentThread().getName()
+							+ "data :" + data);
 				}
-				System.out.println(Thread.currentThread().getName() + "data :"
-						+ data);
 			}
 		}).start();
 
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				data = new Random().nextInt();
-				System.out.println(Thread.currentThread().getName() + "data :"
-						+ data);
+				synchronized (ThreadRandom.class) {
+					data = new Random().nextInt();
+					System.out.println(Thread.currentThread().getName()
+							+ "data :" + data);
+				}
 			}
 		}).start();
 

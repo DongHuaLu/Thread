@@ -4,6 +4,13 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/***
+ * CountDownLatch(n),CountDownLatch.await(),在别的线程countDown到0时,所有被await()
+ * 阻塞的线程将恢复运行
+ * 
+ * 
+ * @author dlu 倒计数锁
+ */
 public class CountDownLatchTest {
 
 	public static void main(String[] args) {

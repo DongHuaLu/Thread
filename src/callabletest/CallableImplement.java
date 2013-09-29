@@ -2,6 +2,12 @@ package callabletest;
 
 import java.util.Random;
 
+/***
+ * 单线程回调模板的使用示例
+ * 
+ * @author dlu
+ * 
+ */
 public class CallableImplement {
 	private static int data = 0;
 

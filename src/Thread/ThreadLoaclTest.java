@@ -2,6 +2,12 @@ package Thread;
 
 import java.util.Random;
 
+/***
+ * 利用ThreadLocal来实现一个线程安全的domian类
+ * 
+ * @author dlu
+ * 
+ */
 public class ThreadLoaclTest {
 
 	public static void main(String[] args) {

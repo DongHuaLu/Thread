@@ -8,7 +8,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 回调模板 setTimeout(int) 设置超时时间 重写三个回调方法
+ * 单线程回调模板 setTimeout(int) 设置超时时间 重写三个回调方法
  * 
  * @author dlu
  * 

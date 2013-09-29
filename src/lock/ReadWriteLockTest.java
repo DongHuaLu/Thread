@@ -3,7 +3,13 @@ package lock;
 import java.util.Random;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-
+/**
+ * 读写锁,保证
+ * 1.在读取的时候其他线程可以读取,但是不能写入
+ * 2.在写入的时候其他线程不能进行读取写入操作都
+ * @author dlu
+ *
+ */
 public class ReadWriteLockTest {
 
 	public static void main(String[] args) {
